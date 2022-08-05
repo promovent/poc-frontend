@@ -1,1 +1,51 @@
 /* You can add global styles to this file, and also import other style files */
+/* colori sito */
+:root {
+    --white: #FFFFFF;
+    --platinum: #E5E5E5;
+    --orangeWeb: #FCA311;
+    --oxfordBlu: #14123D;
+    --black: #000000;
+}
+
+.white-color {
+    color: var(--white) !important;
+}
+
+.white-bg-color{
+    background-color: var(--wwhite) !important;
+}
+
+.platinum-color{
+    color:  var(--platinum) !important;
+}
+
+.platinum-bg-color{
+    background-color: var(--platinum) !important;
+}
+
+.orangeWeb-color{
+    color:  var(--orangeWeb) !important;
+}
+
+.orangeWeb-bg-color{
+    background-color: var(--orangeWeb) !important;
+}
+
+.oxfordBlu-color{
+    color:  var(--oxfordBlu) !important;
+}
+
+.oxfordBlu-bg-color{
+    background-color: var(--oxfordBlu) !important;
+}
+
+.black-color{
+    color:  var(--black) !important;
+}
+
+.black-bg-color{
+    background-color: var(--black) !important;
+}
+
+
