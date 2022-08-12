@@ -2,8 +2,17 @@
     <div class="vh-100 row justify-content-center text-center">
         <div class="col-12 d-flex align-items-center justify-content-center">
             <div>
-                <h1 class="oxfordBlu-color">Ecco il link del tuo evento!</h1>
+                <h1 class="oxfordBlu-color">Pagina di dettaglio Evento</h1>
                 <a routerLink="/" class="btn orangeWeb-bg-color text-white">Torna alla homepage!</a>
+            </div>
+        </div>
+        <div class="col-12 d-flex align-items-center justify-content-center">
+            <div>
+                <h1 class="oxfordBlu-color">Copia qui il tuo link!</h1>	
+                <button class="btn orangeWeb-bg-color text-white" (click)="copyText()">Copia il link</button>
+                <div>
+                    <p class="d-none" id="box">Link copiato con successo</p>
+                </div>
             </div>
         </div>
     </div>

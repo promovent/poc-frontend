@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ClipboardService } from 'ngx-clipboard';
 
 @Component({
   selector: 'app-event-detail',
@@ -7,9 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EventDetailComponent implements OnInit {
 
-  constructor() { }
+  content = 'Hai copiato correttamente il link';
+
+  constructor(
+    private clipboardApi: ClipboardService
+  ) { }
 
   ngOnInit(): void {
   }
 
+  copyText() {
+    this.clipboardApi.copyFromContent(this.content);
+  }
 }
