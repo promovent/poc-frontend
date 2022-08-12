@@ -11,6 +11,7 @@ import { WelcomePageComponent } from './welcome-page/welcome-page.component';
 import { EventDetailComponent } from './event-detail/event-detail.component';
 // copy that link import
 import { ClipboardModule } from 'ngx-clipboard';
+import { MessagesComponent } from './messages/messages.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { ClipboardModule } from 'ngx-clipboard';
     FooterComponent,
     EventListComponent,
     WelcomePageComponent,
-    EventDetailComponent
+    EventDetailComponent,
+    MessagesComponent
   ],
   imports: [
     BrowserModule,

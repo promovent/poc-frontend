@@ -1,0 +1,8 @@
+<div class="message-box orangeWeb-bg-color text-white col-1" *ngIf="messageService.messages.length">
+    <button type="button" class="clear btn btn-danger close-box" (click)="messageService.clear()">
+        <i class="bi bi-x"></i>
+    </button>
+    <div *ngFor='let message of messageService.messages' class="text-center"> 
+        {{message}} 
+    </div>
+</div>
