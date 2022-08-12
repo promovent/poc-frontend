@@ -8,6 +8,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
 import { EventListComponent } from './event-list/event-list.component';
 import { WelcomePageComponent } from './welcome-page/welcome-page.component';
+import { EventDetailComponent } from './event-detail/event-detail.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { WelcomePageComponent } from './welcome-page/welcome-page.component';
     NavbarComponent,
     FooterComponent,
     EventListComponent,
-    WelcomePageComponent
+    WelcomePageComponent,
+    EventDetailComponent
   ],
   imports: [
     BrowserModule,
