@@ -9,7 +9,7 @@ import { MessageService } from '../message.service';
 })
 export class EventDetailComponent implements OnInit {
 
-  content = 'Hai copiato correttamente il link';
+  content = 'Questo è il link che hai copiato';
 
   constructor(
     private clipboardApi: ClipboardService,
