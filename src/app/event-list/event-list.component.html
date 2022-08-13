@@ -3,6 +3,13 @@
         <div class="col-12 d-flex align-items-center justify-content-center">
             <div>
                 <h1 class="oxfordBlu-color">Lista degli eventi</h1>
+                <ul class="">
+                    <li *ngFor="let event of events">
+                      <button type="button" routerLink="/event-detail/{{event.id}}" class="btn btn-success my-3">
+                        <span class="">{{event.name}}</span>
+                      </button>
+                    </li>
+                </ul>
                 <a routerLink="/" class="btn orangeWeb-bg-color text-white">Torna alla homepage!</a>
                 <a routerLink="/event-detail" class="btn oxfordBlu-bg-color text-white ms-3">Vai alla pagina di dettaglio dell'evento</a>
             </div>

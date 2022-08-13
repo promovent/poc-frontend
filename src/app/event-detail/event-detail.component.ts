@@ -1,6 +1,10 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { ClipboardService } from 'ngx-clipboard';
 import { MessageService } from '../message.service';
+import { EventService } from '../event.service';
+import { Eventi } from '../eventi';
+import { ActivatedRoute } from '@angular/router';
+import { Location } from "@angular/common";
 
 @Component({
   selector: 'app-event-detail',
@@ -10,13 +14,24 @@ import { MessageService } from '../message.service';
 export class EventDetailComponent implements OnInit {
 
   content = 'Questo è il link che hai copiato';
+  
+  @Input() event? : Eventi
 
   constructor(
     private clipboardApi: ClipboardService,
-    private messageService: MessageService
+    private messageService: MessageService,
+    private eventService: EventService,
+    private route: ActivatedRoute,
+    private location: Location
   ) { }
 
   ngOnInit(): void {
+    this.getEvent();
+  }
+
+  getEvent(): void {
+    const id = Number(this.route.snapshot.paramMap.get('id'))
+    this.eventService.getEvent(id).subscribe(event => this.event = event)
   }
 
   copyText() {
