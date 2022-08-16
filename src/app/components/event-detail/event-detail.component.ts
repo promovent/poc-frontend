@@ -1,8 +1,8 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { ClipboardService } from 'ngx-clipboard';
-import { MessageService } from '../message.service';
-import { EventService } from '../event.service';
-import { Eventi } from '../eventi';
+import { MessageService } from '../../services/message-service/message.service';
+import { EventService } from '../../services/event-service/event.service';
+import { Eventi } from '../../interfaces/eventi';
 import { ActivatedRoute } from '@angular/router';
 import { Location } from "@angular/common";
 

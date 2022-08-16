@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { EventService } from '../event.service';
-import { Eventi } from '../eventi';
-import { EVENTS } from '../mock-events';
+import { EventService } from '../../services/event-service/event.service';
+import { Eventi } from '../../interfaces/eventi';
+import { EVENTS } from '../../mock-entities/mock-events';
 
 @Component({
   selector: 'app-event-list',

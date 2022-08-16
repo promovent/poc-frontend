@@ -1,4 +1,4 @@
-import { Eventi } from "./eventi";
+import { Eventi } from "../interfaces/eventi";
 
 export const EVENTS: Eventi[] = [
     {id:1, name: 'Festa incredibile'},
