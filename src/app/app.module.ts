@@ -12,6 +12,7 @@ import { EventDetailComponent } from './components/event-detail/event-detail.com
 // copy that link import
 import { ClipboardModule } from 'ngx-clipboard';
 import { MessagesComponent } from './components/messages/messages.component';
+import { PromoterListComponent } from './components/promoter-list/promoter-list.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { MessagesComponent } from './components/messages/messages.component';
     EventListComponent,
     WelcomePageComponent,
     EventDetailComponent,
-    MessagesComponent
+    MessagesComponent,
+    PromoterListComponent
   ],
   imports: [
     BrowserModule,

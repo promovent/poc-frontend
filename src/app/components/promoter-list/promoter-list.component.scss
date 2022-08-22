@@ -1,0 +1,22 @@
+.box{
+    width: 40vw !important ;
+    height: 50vh !important;
+    padding: 4px;
+    // border:1px solid #EEE; border-right:0 solid;
+    overflow:auto;
+    margin-top: 50px;
+    background-attachment: fixed;
+}
+
+.card{
+    -webkit-box-shadow: 2px 0px 21px 2px #858585; 
+    box-shadow: 2px 0px 21px 2px #858585;
+    transition: 0.5s;
+}
+
+.card:hover{
+    transform: scale(1.05);
+    -webkit-box-shadow: 2px 0px 21px 4px #85858500; 
+    box-shadow: 2px 0px 21px 4px #85858500;
+    transition: 0.5s;
+}

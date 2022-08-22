@@ -2,11 +2,16 @@
     <div class="vh-100 row justify-content-center text-center">
         <div class="col-12 d-flex align-items-center justify-content-center">
             <div>
-                <h1 class="oxfordBlu-color">Pagina di dettaglio Evento</h1>
                 <div *ngIf="event">
-                    <h2>{{event.name | uppercase}}</h2>
+                    <h1>{{event.name | uppercase}}</h1>
                 </div>
                 <a routerLink="/" class="btn orangeWeb-bg-color text-white">Torna alla homepage!</a>
+            </div>
+        </div>
+        <div class="col-10 d-flex align items-center justify-content-center">
+            <div>
+                <h1>Ecco chi ha lavorato a questo Evento</h1>
+                <app-promoter-list class="row justify-content-center"></app-promoter-list>
             </div>
         </div>
         <div class="col-12 d-flex align-items-center justify-content-center">

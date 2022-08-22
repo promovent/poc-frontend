@@ -1,8 +1,6 @@
-<div class="message-box orangeWeb-bg-color text-white col-1" *ngIf="messageService.messages.length">
-    <button type="button" class="clear btn btn-danger close-box" (click)="messageService.clear()">
-        <i class="bi bi-x"></i>
-    </button>
+<div class="transition-test alert alert-warning alert-dismissible fade show" *ngIf="messageService.messages.length" role="alert">
     <div *ngFor='let message of messageService.messages' class="text-center"> 
-        {{message}} 
+        <strong>{{message}}</strong> 
     </div>
+    <button type="button" class="btn-close" (click)="messageService.clear()" data-bs-dismiss="alert" aria-label="Close"></button>
 </div>
